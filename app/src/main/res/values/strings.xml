@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Movie Magic</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_box_office_detail">BoxOfficeDetailActivity</string>
+    <string name="search">Search</string>
+    <string name="towatch">To watch list</string>
+    <string name="search_film">Enter film name</string>
+    <string name="title_activity_list_movies">Search Results</string>
+    <string name="title_box_office">Top Box Office</string>
+    <string name="close">Close Me</string>
+    <string name="share">Share</string>
+    <string name="rotten">Go to Rotten Tomatoes</string>
+    <string name="title_activity_reviews">ReviewsActivity</string>
+    <string name="click_reviews">Click here for Top Critic Reviews</string>
+
+</resources>

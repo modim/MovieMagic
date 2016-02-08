@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".BoxOfficeDetailActivity" >
+
+    <!-- @drawable/large_movie_poster sourced from 
+         http://content8.flixster.com/movie/11/15/86/11158674_pro.jpg -->
+    <ImageView
+        android:id="@+id/ivPosterImage"
+        android:layout_width="100dp"
+        android:layout_height="147dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:maxHeight="221dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/large_movie_poster" />
+
+    <TextView
+        android:id="@+id/tvCriticsScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ivPosterImage"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivPosterImage"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/ivPosterImage"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPosterImage"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvSynopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:id="@+id/buttonReviews"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|left"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="@string/click_reviews" />
+
+            <Button
+                android:id="@+id/buttonRotten"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:background="@android:color/darker_gray"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="5dp"
+                android:textStyle="italic"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/rotten" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvAudienceScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCriticsScore"
+        android:layout_below="@+id/tvCriticsScore"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvAudienceScore"
+        android:layout_below="@+id/tvAudienceScore"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvMpaaRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvReleaseDate"
+        android:layout_below="@+id/tvReleaseDate"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+</RelativeLayout>

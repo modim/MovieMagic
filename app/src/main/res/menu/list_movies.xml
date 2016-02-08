@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.itu.monalimodi.moviereview.ListMoviesActivity" >
+
+    <item android:id="@+id/action_close"
+        android:title="@string/close"
+        android:showAsAction="ifRoom"
+        android:icon="@android:drawable/btn_dialog" />
+</menu>
